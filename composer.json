@@ -4,6 +4,7 @@
     "type": "library",
     "license": "MIT",
     "autoload": {
+        "file": ["src/Helpers.php"],
         "psr-4": {
             "Kirilmaz\\Helpers\\": "src/"
         }
