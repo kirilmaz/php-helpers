@@ -13,8 +13,8 @@ if (false === function_exists('pd')) {
 }
 
 if (false === function_exists('conf')) {
-    function conf($name = null) {
-        if (is_null($name)) {
+    function conf($name = null, $required = []) {
+        if (true === is_null($name)) {
             throw new \Exception("Config name cannot be empty");
         }
 
@@ -33,6 +33,14 @@ if (false === function_exists('conf')) {
         }
 
         unset($name, $configFile);
+
+        if (0 < count($required)) {
+            foreach ($required as $property) {
+                if (false === property_exists($config, $property)) {
+                    throw new \Exception('Missing property "' . $property . '" in config file');
+                }
+            }
+        }
 
         return $config;
     }
