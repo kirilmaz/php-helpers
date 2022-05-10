@@ -1,0 +1,19 @@
+{
+    "name": "kirilmaz/helpers",
+    "description": "Helper functions",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kirilmaz\\Helpers\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kenan Kirilmaz",
+            "email": "kenan@kirilmaz.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
