@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "6cbfcfaf889c6e9504088d5b7f927d5f",
+    "packages": [
+        {
+            "name": "kirilmaz/validators",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kirilmaz/php-validators.git",
+                "reference": "8162ecc77d8d1dca66d5fca9e63ba305f38986ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kirilmaz/php-validators/zipball/8162ecc77d8d1dca66d5fca9e63ba305f38986ac",
+                "reference": "8162ecc77d8d1dca66d5fca9e63ba305f38986ac",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kirilmaz\\Validators\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kenan Kirilmaz",
+                    "email": "kenan@kirilmaz.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/kirilmaz/php-validators/issues",
+                "source": "https://github.com/kirilmaz/php-validators/tree/master"
+            },
+            "time": "2022-05-10T12:12:57+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "kirilmaz/validators": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

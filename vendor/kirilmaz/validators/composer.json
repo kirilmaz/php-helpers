@@ -1,12 +1,11 @@
 {
-    "name": "kirilmaz/helpers",
+    "name": "kirilmaz/validators",
     "description": "",
     "type": "library",
     "license": "MIT",
     "autoload": {
-        "files": ["src/Helpers.php"],
         "psr-4": {
-            "Kirilmaz\\Helpers\\": "src/"
+            "Kirilmaz\\Validators\\": "src/"
         }
     },
     "authors": [
@@ -16,7 +15,5 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-        "kirilmaz/validators": "dev-master"
-    }
+    "require": {}
 }

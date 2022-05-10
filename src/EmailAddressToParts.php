@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace Kirilmaz\Helpers;
 
+use Kirilmaz\Validators\EmailValidator;
+
 class EmailAddressToParts {
     public static function get($address = null) : object | bool {
         if (false === is_string($address)) {
