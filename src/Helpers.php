@@ -28,7 +28,7 @@ if (false === function_exists('conf')) {
             throw new \Exception("Config name cannot be empty");
         }
 
-        $configFile = __DIR__ . '/../../../configs/' . $name . '.json';
+        $configFile = __DIR__ . '/../../../../configs/' . $name . '.json';
         $configFile = realpath($configFile);
 
         if (false === $configFile) {
