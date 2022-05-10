@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-use Kirilmaz\Validators\EmailValidator;
+namespace Kirilmaz\Helpers;
 
 class EmailAddressToParts {
     public static function get($address = null) : object | bool {
