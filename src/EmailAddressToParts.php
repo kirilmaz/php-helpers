@@ -1,13 +1,12 @@
 <?php
 declare(strict_types=1);
 
-use \Exception;
 use Kirilmaz\Validators\EmailValidator;
 
 class EmailAddressToParts {
     public static function get($address = null) : object | bool {
         if (false === is_string($address)) {
-            throw new Exception('Email address has to be valid string');
+            return false;
         }
 
         if (false === EmailValidator::validate($address)) {
