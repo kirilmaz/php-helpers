@@ -17,7 +17,7 @@ class EmailAddressToParts {
 
         $parts = explode('@', $address);
 
-        return (object)[
+        return (object) [
             'username' => $parts[0],
             'domain' => $parts[1]
         ];

@@ -1,4 +1,5 @@
 <?php
+
 if (false === function_exists('pre')) {
     function pre($input = null, $detailed = true) {
         if($detailed) {
@@ -32,14 +33,14 @@ if (false === function_exists('conf')) {
         $configFile = realpath($configFile);
 
         if (false === $configFile) {
-            throw new \Exception('Config file "' . $name . '" not found!', false);
+            throw new \Exception('Config file "' . $name . '" not found!');
         }
 
         $config = file_get_contents($configFile);
         $config = json_decode($config);
 
         if (null === $config) {
-            throw new \Exception('Invalid JSON format for config file "' . $name . '"!', false);
+            throw new \Exception('Invalid JSON format for config file "' . $name . '"!');
         }
 
         unset($name, $configFile);
